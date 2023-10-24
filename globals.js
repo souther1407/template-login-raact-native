@@ -2,6 +2,7 @@ export const GLOBALS = {
   fontBase: 16,
   colors: {
     black: "#222",
+    transparentBlack: "rgba(5,5,5,0.5)",
     lightBlack: "#252525",
     white: "#eee",
     green: "#8de0a6",
@@ -44,12 +45,14 @@ export const GLOBALS = {
           lighter: "",
         },
         background: {
-          darker: "",
+          darker: "#111",
           base: "#222",
-          lighter: "",
+          lighter: "#444",
         },
         text: {
+          darker: "#bbb",
           base: "#eee",
+          lighter: "#fff",
         },
       },
     },

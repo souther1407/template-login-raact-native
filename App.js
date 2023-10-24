@@ -4,6 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Login from "./views/login/Login";
 import Dashboard from "./views/dashboard/Dashboard";
+import { ROUTES } from "./constants/Routes";
 
 export default function App() {
   const Stack = createStackNavigator();
@@ -12,12 +13,12 @@ export default function App() {
       <StatusBar style="auto" />
       <Stack.Navigator>
         <Stack.Screen
-          name="Login"
+          name={ROUTES.login}
           component={Login}
           options={{ title: "Log in" }}
         />
         <Stack.Screen
-          name="Dashboard"
+          name={ROUTES.dashboard}
           component={Dashboard}
           options={{ title: "Dashboard" }}
         />

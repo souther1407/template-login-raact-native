@@ -8,6 +8,6 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     zIndex: 10000,
     position: "absolute",
-    backgroundColor: GLOBALS.colors.black,
+    backgroundColor: GLOBALS.colors.transparentBlack,
   },
 });
